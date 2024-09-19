@@ -1,3 +1,6 @@
+/* eslint-disable  */
+import { createPortal } from "react-dom";
+import { HiXMark } from "react-icons/hi2";
 import styled from "styled-components";
 
 const StyledModal = styled.div`
@@ -48,3 +51,22 @@ const Button = styled.button`
     color: var(--color-grey-500);
   }
 `;
+
+function Modal({ children, onClose }) {
+  // createPortal is used to render the Modal component outside the normal React component
+  // like in vue.js, we can use the <teleport> tag to render the component outside the normal flow
+  // here we use it in the modal for reusability and to prevent the modal from being hidden (overflow hidden) by other components
+  return createPortal(
+    <Overlay>
+      <StyledModal>
+        <Button onClick={onClose}>
+          <HiXMark />
+        </Button>
+        <div>{children}</div>
+      </StyledModal>
+    </Overlay>,
+    document.body
+  );
+}
+
+export default Modal;
