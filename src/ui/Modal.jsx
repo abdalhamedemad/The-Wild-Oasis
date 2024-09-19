@@ -1,8 +1,16 @@
 /* eslint-disable  */
-import { cloneElement, createContext, useContext, useState } from "react";
+import {
+  cloneElement,
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { createPortal } from "react-dom";
 import { HiXMark } from "react-icons/hi2";
 import styled from "styled-components";
+import { useClickOutside } from "../hooks/useClickOutside";
 
 const StyledModal = styled.div`
   position: fixed;
@@ -74,13 +82,16 @@ function Open({ children, opens: opensWindowName }) {
 
 function Window({ children, name }) {
   const { openName, close } = useContext(ModalContext);
+
+  const ref = useClickOutside(close);
+
   if (openName !== name) return null;
   // createPortal is used to render the Modal component outside the normal React component
   // like in vue.js, we can use the <teleport> tag to render the component outside the normal flow
   // here we use it in the modal for reusability and to prevent the modal from being hidden (overflow hidden) by other components
   return createPortal(
     <Overlay>
-      <StyledModal>
+      <StyledModal ref={ref}>
         <Button onClick={close}>
           <HiXMark />
         </Button>
