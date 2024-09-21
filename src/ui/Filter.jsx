@@ -42,14 +42,14 @@ function Filter({ filterField, options }) {
     searchParams.set(filterField, filter);
     setSearchParams(searchParams);
   }
+  const activeFilter = searchParams.get(filterField) || options[0].value;
   return (
     <StyledFilter>
       {options.map((option) => (
         <FilterButton
           key={option.value}
-          active={
-            (searchParams.get(filterField) || options[0].value) === option.value
-          }
+          active={activeFilter === option.value}
+          disabled={activeFilter === option.value}
           onClick={() => handleClick(option.value)}
         >
           {option.label}
