@@ -9,7 +9,7 @@ import { useClickOutside } from "../hooks/useClickOutside";
 const Menu = styled.div`
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
 `;
 
 const StyledToggle = styled.button`
