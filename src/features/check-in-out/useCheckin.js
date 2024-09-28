@@ -9,7 +9,7 @@ export function useCheckin() {
   // inorder to refetch the updated booking data
   const queryClient = useQueryClient();
   const { mutate: checkin, isLoading: isCheckingIn } = useMutation({
-    mutationFn: (bookingId, breakfast) =>
+    mutationFn: ({ bookingId, breakfast }) =>
       updateBooking(bookingId, {
         status: "checked-in",
         isPaid: true,
