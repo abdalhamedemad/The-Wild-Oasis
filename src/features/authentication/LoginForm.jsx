@@ -1,14 +1,30 @@
+/* eslint-disable  */
 import { useState } from "react";
 import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import Input from "../../ui/Input";
+import SpinnerMini from "../../ui/SpinnerMini";
 import FormRowVertical from "../../ui/FormRowVertical";
+import { useLogin } from "./useLogin";
 
 function LoginForm() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("medo.emadd23@gmail.com");
+  const [password, setPassword] = useState("Medo123456789");
+  const { login, isLoading } = useLogin();
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!email || !password) return;
 
-  function handleSubmit() {}
+    login(
+      { email, password },
+      {
+        onSettled: () => {
+          setEmail("");
+          setPassword("");
+        },
+      }
+    );
+  }
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -32,7 +48,9 @@ function LoginForm() {
         />
       </FormRowVertical>
       <FormRowVertical>
-        <Button size="large">Login</Button>
+        <Button size="large" onClick={handleSubmit} disabled={isLoading}>
+          {isLoading ? <SpinnerMini /> : "Login"}
+        </Button>
       </FormRowVertical>
     </Form>
   );

@@ -1,4 +1,4 @@
-import styled ,{css} from "styled-components";
+import styled, { css } from "styled-components";
 
 // const text = css`
 // color: aliceblue;
@@ -7,25 +7,31 @@ import styled ,{css} from "styled-components";
 // css is a function from styled-components that allows us to write css styles (JUST FOR VISUALIZATION)
 
 const Heading = styled.h1`
-
   ${(props) =>
     props.as === "h1" &&
     css`
-    font-size: 3rem;
-    font-weight: 600;
-  `}
+      font-size: 3rem;
+      font-weight: 600;
+    `}
   ${(props) =>
     props.as === "h2" &&
     css`
-    font-size: 2rem;
-    font-weight: 600;
-  `}
+      font-size: 2rem;
+      font-weight: 600;
+    `}
   ${(props) =>
     props.as === "h3" &&
     css`
-    font-size: 2rem;
-    font-weight: 500;
-  `}
+      font-size: 2rem;
+      font-weight: 500;
+    `}
+  ${(props) =>
+    props.as === "h4" &&
+    css`
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+    `}
   
   line-height: 1.5;
 `;
