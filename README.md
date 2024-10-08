@@ -17,7 +17,7 @@
 
 ---
 
-<p align="center"> Pizza ordering website.
+<p align="center"> Hotel Management website.
     <br> 
 </p>
 
@@ -60,7 +60,7 @@
 
 ### 🌐 Create Cabin
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/CreateCabinPage.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/CreateCabinPage.jpeg?raw=true)
 
 ### ➕ Create New User Page
 
@@ -91,7 +91,7 @@ npm and nodejs should be installed on your system.
 1. to clone the repository run the following command
 
 ```bash
-git clone https://github.com/abdalhamedemad/worldwise.git
+git clone https://github.com/abdalhamedemad/The-Wild-Oasis.git
 ```
 
 2. to install the dependencies run the following command
@@ -123,10 +123,15 @@ http://localhost:5173
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [React](https://reactjs.org/) - Web Framework
+- [React-Query](https://tanstack.com/query/v3) - Data Fetching & Caching Library
 - [Vite](https://vitejs.dev/) - Build Tool
 - [React-Router](https://reactrouter.com/) - Routing Library
-- [Json-Server](https://www.npmjs.com/package/json-server) - Fake Rest API
-- [react-leaflet](https://react-leaflet.js.org/) - Map Library
+- [supabase](https://supabase.com/) - Backed Server
+- [react-hook-form](https://react-hook-form.com/) - Form Hook Library
+- [recharts](https://recharts.org/en-US/) - Charts Library
+- [react-toastify](https://fkhadra.github.io/react-toastify/introduction/) - Notification Library
+- [react-icons](https://react-icons.github.io/react-icons/) - Icon Library
+- [styled-components](https://styled-components.com/) - Styling Library
 
 ## 📄 License <a name = "authors"></a>
 
