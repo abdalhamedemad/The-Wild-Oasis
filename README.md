@@ -34,7 +34,7 @@
 
 "The Wild Oasis" Hotel Management App is a robust, user-friendly solution designed for hotel staff to streamline cabin management, bookings, and guest services. Prioritizing both security and simplicity, the app ensures that only authorized hotel employees can access and operate its features, enhancing operational efficiency and protecting sensitive information...
 
-## 🧐 About <a name = "Features"></a>
+## 🧐 Features <a name = "Features"></a>
 
 1. **User Authentication**
 
