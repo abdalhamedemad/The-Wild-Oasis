@@ -1,10 +1,10 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="./public//logo.png" alt="Project logo" width="200"></a>
+ <img src="./public//logo-light.png" alt="Project logo" width="200"></a>
  </a>
 </p>
 
-<h3 align="center">🌐 WorldWise</h3>
+<h3 align="center">The Wild Oasis</h3>
 
 <div align="center">
 
@@ -32,35 +32,51 @@
 
 ## 🧐 About <a name = "about"></a>
 
-"WorldWise" is a user-friendly app designed to help users track their travel experiences and plan future trips effortlessly. Users can easily create lists of visited and desired destinations, complete with notes for each location. With its simplicity and convenience, "WorldWise" serves as a valuable tool for organizing travels and inspiring future adventures..
+"The Wild Oasis" Hotel Management App is a robust, user-friendly solution designed for hotel staff to streamline cabin management, bookings, and guest services. Prioritizing both security and simplicity, the app ensures that only authorized hotel employees can access and operate its features, enhancing operational efficiency and protecting sensitive information...
 
-## 🚀 Live Demo <a name = "life_demo"></a>
+## 🚀 Live Demo <a name = "life_demo" href="https://the-wild-oasis-dusky-kappa.vercel.app/" >Demo</a>
 
 ## 📸 Screenshots <a name = "screen_shots"></a>
 
+### 🚶‍➡️Login
+
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/loginDarkMode.png?raw=true)
+
 ### 🏠 Home Page
 
-![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/1.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/Dashboard.png?raw=true)
 
-### 💵 Pricing Page
+### 👜 Booking Page
 
-![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/2.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/Bookings.png?raw=true)
 
-### ℹ️ About Page
+### ℹ️ Booking Details Page
 
-![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/3.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/BookingDetails.png?raw=true)
 
-### 🗺️ Main Page
+### 🏠 Cabin Page
 
-![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/4.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/Cabins.png?raw=true)
 
-### 🌐 Cities Section
+### 🌐 Create Cabin
 
-![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/5.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/CreateCabinPage.png?raw=true)
 
-### ➕ Add info. Section
+### ➕ Create New User Page
 
-![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/6.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/CreateNewUser.png?raw=true)
+
+### ⚙️ Update Account Page
+
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/CreateNewUser.png?raw=true)
+
+### ⚙️ Settings Page
+
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/Settings.png?raw=true)
+
+### ☀️ Light Mode Dashboard
+
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis/blob/main/screenshots/lightMode.png?raw=true)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
