@@ -28,7 +28,7 @@ export function useBookings() {
 
   // PRE-FETCHING
   const pageCount = Math.ceil(count / PAGE_SIZE);
-
+  // prefetchQuery is used to load the next page’s data in advance, so when the user navigates to it, the data is already in cache and the UI updates instantly.
   if (page < pageCount) {
     queryClient.prefetchQuery({
       queryKey: ["bookings", filter, sortBy, page + 1],
